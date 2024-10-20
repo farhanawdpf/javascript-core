@@ -18,3 +18,19 @@ let c=4;
 c=5;
 c=6;
 document.write(c);
+document.write("<br>");
+
+// let newN = "hello";
+// local variable /scop
+ /*function myFunction (){ 
+    let nam ="Aminul";
+    document.write("This is" +" "+nam);
+  }
+  myFunction ();
+  document.write(nam); */
+  //global variable
+ /* let num = 4+5;
+  function info(){ 
+      document.write("this is positive number" +" "+num+" " +"positive");
+  }
+  info(); */
