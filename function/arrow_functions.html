@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>function hello(){}</h1>
+    <h1>const hello = function hello(){}</h1>
+    <h1>const hello = () => {}</h1>
+    <h1>( () => {} )()</h1>
+
+    <script> 
+        // Single line of code
+            let add = (a, b) => a + b;
+            console.log(add(3, 2));
+
+
+            // Multiple line of code
+            const great = (a, b) => {
+                if (a > b)
+                    return "a is greater";
+                else
+                    return "b is greater";
+            }
+            console.log(great(3, 5));
+
+        const greet = (name) => "Hello, " + name + "!";
+
+        console.log(greet("John")); // Output: "Hello, John!"
+
+
+        const even=(a,b)=>a+b;
+
+        console.log(even(23,1));
+    </script>
+</body>
+</html>
