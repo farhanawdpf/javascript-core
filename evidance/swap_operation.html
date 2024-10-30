@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- decending order  -->
+    <script> 
+    // a<b<c
+// a<b
+// a<c
+// b<c
+
+    var a = prompt("Enter a number");
+    var b = prompt("Enter a number");
+    var c = prompt("Enter a number");
+        if (a>b) { 
+            temp = a;
+            a = b;
+            b = temp;
+        }
+         if (a>c) { 
+            temp = c;
+            c = a;
+            a = temp;
+         }
+         if (b>c) { 
+            temp = b;
+            b = c;
+            c = temp;
+         }
+         document.write(a+","+b+","+c);
+    </script>
+</body>
+</html>
