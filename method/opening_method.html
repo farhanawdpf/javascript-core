@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opening method</title>
+</head>
+<body>
+    <button onclick="submitF()">click</button>
+    <!-- <button onclick="moveS()">click m</button> -->
+    <script> 
+    function submitF(){ 
+
+        var a=window.open('','','width=400px,height=400px');
+        a.document.write("this is document");
+    }
+    function moveR(){ 
+        moveBy(20,20)
+    }
+    function moveA(){ 
+        moveBy(20,20)
+    }
+    function moveS(){ 
+        moveBy(15,10)
+    }
+
+    </script>
+</body>
+</html>
