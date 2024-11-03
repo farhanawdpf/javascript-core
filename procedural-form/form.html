@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" name="f">
+      Name: <br />
+      <input type="text" name="n" /><br />
+      Address: <br />
+      <textarea name="add" id=""></textarea><br />
+      <div>
+        Gender<br />
+        Male<input type="radio" name="rdoG" value="Male" /> Female<input
+          type="radio"
+          name="rdoG"
+          value="Female"
+        />
+      </div>
+      <br />
+      <div>
+        course <br />
+        <select name="course" id="">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JS</option>
+        </select>
+      </div>
+      <div>
+        Subject<br />
+        English<input type="checkbox" value="English" name="chkSubject" />
+        Bengali<input type="checkbox" value="Bengali" name="chkSubject" />
+
+        Math<input type="checkbox" value="Math" name="chkSubject" />
+      </div>
+      <input type="button" value="submit" onclick="my_f()" />
+      <input type="reset" value="Reset" />
+    </form>
+    <script>
+      function my_f() {
+        var name = document.f.n.value;
+        var address = document.f.add.value;
+        var course = document.f.course.value;
+        doc = open("", "", "width=100px, height=200px");
+        var gender = "";
+        var subject = "";
+        
+        for (j = 0; j < document.f.chkSubject.length; j++) {
+          if (document.f.chkSubject[j].checked) {
+            subject += document.f.chkSubject[j].value + ", ";
+          }
+        }
+        //check if radio button is selected and read selected value
+        for (i = 0; i < document.f.rdoG.length; i++) {
+          if (document.f.rdoG[i].checked) {
+            gender = document.f.rdoG[i].value;
+          }
+        }
+
+        with (doc.document) {
+          write("Name:" + name);
+          write("<br>");
+          write("Name:" + address);
+          write("<br>");
+          write("Gender:" + gender + "<br/>");
+          write("Gender:" + course + "<br/>");
+        }
+      }
+    </script>
+  </body>
+</html>
