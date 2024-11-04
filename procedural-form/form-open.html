@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Student Admission</title>
 
+
 </head>
  
 <body>
@@ -11,8 +12,14 @@
   
   <div>Name<br/>
   <input type="text" name="txtName" />
-  </div>
-  
+  </div><br>
+  <div> 
+    <label for="myEmail">Email</label>
+					
+		<input type="text" id="myEmail" name="myEmail" onblur="checkEmail()">
+						<span id="emailmsg" class="display-block"></span>							
+					
+  </div><br>
   <div>Address<br/>
   <textarea  name="txtAddress" ></textarea>
   </div>
@@ -44,6 +51,22 @@
 </form>
 
 <script language="javascript">
+   function checkEmail(){
+          var email = document.getElementById("myEmail");
+          var emailNaN = /^[^ ]+@[^ ]+\.[a-z]{2,4}$/;
+          if(!emailNaN.test(email.value))
+          {
+            alert("please inter valid email");
+            document.getElementById('myEmail').style.borderColor = "#FF0000";			
+              return false;
+          }
+        else
+        {
+          document.getElementById('myEmail').style.borderColor = "#228B22";	
+          
+        }	
+          return true;
+      }
  
 function dyn_window(){  
   
@@ -52,6 +75,7 @@ function dyn_window(){
   var name=document.f.txtName.value;
   var address=document.f.txtAddress.value;
   var course=document.f.txtCourse.value;
+  var email=document.f.myEmail.value;
   
   var sex="";
   var subject="";
@@ -70,8 +94,7 @@ function dyn_window(){
       subject+=document.f.chkSubject[j].value+", ";
       }
   }
-  
- 
+
    // create new window here
   
     a=open('','','width=200px,height=200px')
@@ -79,17 +102,17 @@ function dyn_window(){
   with(a.document){
     write("<html>");
     write("<head><title>"+title+"</title></head>");
-    write("<body>");
+    write("<body style='background-color:red'>");
     
     write("<div style='border:1px solid gray'>Name:"+name+"<br/>");
     write("Address:"+address+"<br/>");
+    write("Address:"+email+"<br/>");
     write("Course:"+course+"<br/>");
     write("Sex:"+sex+"<br/>");
     write("Subject:"+subject+"<br/></div>");
     write("<input type='button' value='Close me' onclick='self.close();' />");
     write("<input type='button' value='Print' onclick='self.print();' />");
-    write("</body>");
-    write("</html>");
+    
   }
    
 }// end the function 
