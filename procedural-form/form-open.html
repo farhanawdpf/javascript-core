@@ -11,7 +11,9 @@
 <form action="#" method="post" name="f" style="width:200px; margin:0px auto; border:1px solid gray; padding:10px">
   
   <div>Name<br/>
-  <input type="text" name="txtName" />
+  <input type="text" name="txtName" id="txtname" onblur="nameChk()"/>
+  <span id="emailmsg" class="display-block"></span>							
+
   </div><br>
   <div> 
     <label for="myEmail">Email</label>
@@ -67,6 +69,23 @@
         }	
           return true;
       }
+
+      function nameChk(){
+          var name = document.getElementById("txtname");
+          var emailNaN = /^[0-9A-Za-z]{4,11}$/;
+          if(!emailNaN.test(name.value))
+          {
+            alert("please inter minimum 4 and max 11 ");
+            document.getElementById('txtname').style.borderColor = "#FF0000";			
+              return false;
+          }
+        else
+        {
+          document.getElementById('txtname').style.borderColor = "#228B22";	
+          
+        }	
+          return true;
+      }
  
 function dyn_window(){  
   
@@ -75,7 +94,7 @@ function dyn_window(){
   var name=document.f.txtName.value;
   var address=document.f.txtAddress.value;
   var course=document.f.txtCourse.value;
-  var email=document.f.myEmail.value;
+  var email=document.f.myEmail.value; 
   
   var sex="";
   var subject="";
