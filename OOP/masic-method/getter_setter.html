@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create an object:
+        const person = {
+          firstName: "John",
+          lastName: "Doe",
+          language: "",
+          set lang(lang) {//setter
+            this.language = lang.toUpperCase();
+          },
+          get lang() {//getter
+                return this.lastName.toUpperCase();
+            }
+        };
+        
+        // Set a property using set:
+        person.lang = "en";
+        
+        // Display data from the object:
+        document.write("This is setter method"+" "+person.language);
+        document.write("<br>");
+        document.write("This is getter method"+" "+person.lastName);
+        </script>
+</body>
+</html>

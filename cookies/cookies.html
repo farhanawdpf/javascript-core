@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="setCookie()">set cookie</button>
+    <button onclick="showCookie()">Show cookie</button>
+
+    <script> 
+       function setCookie(){ 
+        document.cookie="username=tmk; expires=Thu, 8 Nov 2024 00:00:00 UTC;" ;
+       }
+       function showCookie(){ 
+        if(document.cookie.length!=0){ 
+            alert(document.cookie);
+        }else{ 
+            alert("cookie not set");
+        }
+       }
+    </script>
+</body>
+</html>
