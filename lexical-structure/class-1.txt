@@ -1,0 +1,5 @@
+javascript:
+console.log(); // show console
+document.write(); //show about browser
+alert(); //popup massage
+prompt();// for user input

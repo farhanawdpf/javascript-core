@@ -1,0 +1,11 @@
+Primitive type
+1. number=12
+2. string =""
+3.undefine
+4.boolean = true / flase
+5.null (no value)
+
+non-primitive
+1. function
+2. Array
+3. object
