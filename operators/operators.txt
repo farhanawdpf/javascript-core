@@ -1,0 +1,31 @@
+Operators
+
+
+1.Arithmetic Operators
+Operator	Description
++	Addition
+-	Subtraction
+*	Multiplication
+**	Exponentiation (ES2016)
+/	Division
+%	Modulus (Remainder)
+++	Increment
+--	Decrement
+
+2.Assignment Operators
+Operator	Example	Same As
+
+=	x = y	x = y
++=	x += y	x = x + y
+-=	x -= y	x = x - y
+*=	x *= y	x = x * y
+/=	x /= y	x = x / y
+%=	x %= y	x = x % y
+**=	x **= y	x = x ** y
+3.Comparison Operators
+4.String Operators
+5.Logical Operators
+6.Bitwise Operators
+7.Ternary Operators
+8.Type Operators
+9. others operator
