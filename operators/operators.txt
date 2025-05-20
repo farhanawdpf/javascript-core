@@ -1,6 +1,5 @@
 Operators
 
-
 1.Arithmetic Operators
 Operator	Description
 +	Addition
@@ -23,9 +22,45 @@ Operator	Example	Same As
 %=	x %= y	x = x % y
 **=	x **= y	x = x ** y
 3.Comparison Operators
+Operator	Description
+==	equal to
+===	equal value and equal type
+!= 	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator
 4.String Operators
+
 5.Logical Operators
+
+Operator	Description
+&&	logical and (*)
+||	logical or (+)
+!	logical not
+
+!(a==b)=true
+false
+0=1
+1=0
+
+[
+1 x 0 x1x1=0
+0x0=0
+
+1 + 1 =1
+1+0=1
+0+0=0
+1+0+0+0=1
+]
+
+
+
+
 6.Bitwise Operators
 7.Ternary Operators
 8.Type Operators
 9. others operator
+
