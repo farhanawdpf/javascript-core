@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ascending & descending order</title>
 </head>
 <body>
     <!-- decending order  -->
@@ -14,20 +14,25 @@
 // a<c
 // b<c
 
+// ascending order
+// a>b>c
+// a>b
+// b>c
+
     var a = (parseInt(prompt("Enter a number")));
     var b = (parseInt(prompt("Enter a number")));
     var c = (parseInt(prompt("Enter a number")));
-        if (a>b) { 
+        if (a<b) { 
             temp = a;
             a = b;
             b = temp;
         }
-         if (a>c) { 
+         if (a<c) { 
             temp = c;
             c = a;
             a = temp;
          }
-         if (b>c) { 
+         if (b<c) { 
             temp = b;
             b = c;
             c = temp;

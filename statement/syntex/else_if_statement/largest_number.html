@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest number among three number</title>
+</head>
+<body>
+    <script> 
+
+    // a<b<c
+// program to find the largest among three numbers
+// a>b>c 
+
+// take input from the user
+const a = parseFloat(prompt("Enter first number: "));
+const b= parseFloat(prompt("Enter second number: "));
+const c = parseFloat(prompt("Enter third number: "));
+let largest;
+
+// check the condition
+if(a >= b && a >= c) {
+    largest = a;
+}
+else if (b >= a && b >= c) {
+    largest = b;
+}
+else {
+    largest = c;
+}
+
+// display the result
+document.write("The largest number is " + largest);
+
+
+// let x = parseFloat(prompt("Enter the first number: "));
+// let y = parseFloat(prompt("Enter the second number: "));
+// let z = parseFloat(prompt("Enter the third number: "));
+
+// // Find the largest number using Math.max()
+// let largestNumber = Math.max(x, y, z);
+// console.log("The largest number is: " + largestNumber);
+
+    </script>
+</body>
+</html>
