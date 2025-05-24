@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    var data = [1,0,-6,34,0,56,-45];
+    var positive = 0;
+    var negative = 0;
+    var zero = 0;
+ 
+        for (let i = 0; i<data.length; i++){ 
+            if (data[i]>0){ 
+                positive ++;
+            } else if(data[i]<0){ 
+                negative ++;
+            } else {
+                zero++;
+            }
+        }
+        document.write("Positive Number: "+positive+"<br>");
+        document.write("Negative Number: "+negative+"<br>");
+        document.write("Zero: "+zero);
+    
+    </script>
+</body>
+</html>

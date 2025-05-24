@@ -1,0 +1,15 @@
+i++ (post-increment): Increment i after the value is used.
+++i (pre-increment): Increment i before the value is used. 
+
+let i = 5;
+let j = i++; // j will be 5, i becomes 6
+let k = ++i; // k will be 6, i is already 6
+
+document.write(j)
+
+
+
+
+
+i++    ->Assign --> increment
+++i --> increment -->Assign 
