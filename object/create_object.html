@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        // Create an Object
+        let mobile ={ 
+          name:"SAMSUNG",
+          color:"red",
+          model: 824,
+          'update version': "45",
+        };
+
+        //object property update
+        mobile.model=30;
+        //freeze object
+        Object.freeze(mobile);
+        mobile.color ="black"
+
+        console.log(mobile.model + mobile.color);
+        // document.write(mobile.name +" "+mobile.color +" "+mobile.model );
+        document.write(mobile['update version']);
+    </script>
+</body>
+</html>
