@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Array Sort</title>
   </head>
   <body>
+    <h1>Array Filter</h1>
     <script>
-      //Opposite of pop[remove from first]
-      var a = ["A", "B", "C", "D", "D"];
-      a.shift();
-      console.log(a);
-      a.shift();
-      console.log(a);
+      const ages = [32, 33, 16, 40];
+
+      document.write(filter(checkAdult));
+
+      function checkAdult(age) {
+        return age >= 18;
+      }
     </script>
   </body>
 </html>
