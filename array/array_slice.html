@@ -6,15 +6,49 @@
     <title>Array slice</title>
 </head>
 <body>
+<h1>( start and end)</h1>
+<p> const numbers = [1, 2, 3, (4, 5,7,8),3]; <br>
+(4, 6)
+const slice1 = numbers.slice(1, 4); // Returns [2, 3, 4]<br>
+const slice2 = numbers.slice(2);    // Returns [3, 4, 5]<br>
+const slice3 = numbers.slice(-2);   // Returns [4, 5]<br>
+</p>
+    <script> 
+    
+    const numbers = [1, 2, 3, 4, 5,7,8,3];
+    
+    console.log(numbers.slice(-5,-3));
+    // output :4, 5
+ 
 
-
-    <script>  
-var arr=["AngularJS","Node.js","JQuery","Bootstrap","CSS"]  
-        var result=arr.slice(2,1);  
-        document.write(result); 
-        console.log(result);  
+// var arr=["AngularJS","Node.js","JQuery","Bootstrap","CSS"]  
+//    console.log(arr);  
+//         let result=arr.slice(2, -1);  
+//         console.log(result);  //['JQuery', 'Bootstrap']
 
     </script>  
+
+    <!-- <script> 
+        const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"] -->
+    </script>
 
 
 

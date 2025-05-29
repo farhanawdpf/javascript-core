@@ -1,3 +1,7 @@
+
+Array is a object ,collelction ov veriable
+
+
 const cars = [];
 cars[0]= "Saab";
 cars[1]= "Volvo";
@@ -14,3 +18,9 @@ const cars = [
 
 const cars = new Array("Saab", "Volvo", "BMW");
 document.write ( cars);
+
+
+
+let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";

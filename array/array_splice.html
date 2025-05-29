@@ -6,8 +6,21 @@
     <title>Array_splice</title>
 </head>
 <body>
-    
+    <p>The splice() method adds and/or removes array elements.
+<br>
+The splice() method overwrites the original array.
 
+</p>
+<p> 
+    The splice() method is a built-in method for JavaScript Array objects. It lets you change the content of your array by removing or replacing existing elements with new ones.
+</p>
+<h1> 
+    arr.splice(start_index, delete_count, element1, element2, ..., elementN)
+
+</h1>
+<h1>
+array.splice(index, count, item1, ....., itemX) (0-means no delete)
+</h1>
 <script> 
 //slice Array
 // var a = ["A","B","C","D","D"];
@@ -17,14 +30,14 @@
 //splice Array
 var a = ["A","B","C","D","D"];
 console.log(a);
-var newArray =a.splice(1,0,"d");
-console.log(newArray);
-
-var a=["Monday","Tuesday","Thursday","Friday","sunday"];
+a.splice(2,2,"sifat");
 console.log(a);
 
-var b=a.splice(2,3,"Wednesday","saturday")
-console.log(a);
+// var a=["Monday","Tuesday","Thursday","Friday","sunday"];
+// console.log(a);
+// // At position 2, remove 3 elements then add itm
+// var b=a.splice(2,3,"Wednesday","saturday")
+// console.log(a);
 
 </script>
 </body>
