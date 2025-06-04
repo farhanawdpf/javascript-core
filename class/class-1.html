@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class</title>
+  </head>
+  <body>
+    <script>
+
+
+      class Course {
+        constructor(cname,cage,c_phone){ 
+          this.name=cname;
+          this.age=cage;
+          this.phone=c_phone
+
+        }
+      
+         show (){ 
+          document.write("My Name is " +this.name+ " and my age is "+this.age)
+        }
+
+      }
+     const wdpf = new Course("Sharmin",25,908098); //create object
+     const another = new Course("Assad",23,908); //create object
+      wdpf.show ();
+       document.write("<br>")
+      another.show ();
+      document.write("<br>")
+      document.write("This is "+wdpf.name+" and her age is "+wdpf.age);
+    </script>
+  </body>
+</html>

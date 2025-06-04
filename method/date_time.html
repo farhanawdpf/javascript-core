@@ -6,13 +6,36 @@
     <title>Document</title>
 </head>
 <body>
+
+    <p> 
+        <!-- Date objects are created with the new Date() constructor.
+
+There are 9 ways to create a new date object:
+
+new Date()
+new Date(date string)
+
+new Date(year,month)
+new Date(year,month,day)
+new Date(year,month,day,hours)
+new Date(year,month,day,hours,minutes)
+new Date(year,month,day,hours,minutes,seconds)
+new Date(year,month,day,hours,minutes,seconds,ms) -->
+    </p>
     <script> 
         var date =new Date();
    document.write(date);
     let day =date.getDay();
     document.write(day);
     console.log(day);
-     
+    let month =date.getMonth();
+        console.log(month);
+  let minutes =date.getMinutes();
+     console.log(minutes);
+     let hour =date.getHours();
+     console.log(hour);
+     let year =date.getFullYear()
+        console.log(year);
     </script>
 </body>
 </html>

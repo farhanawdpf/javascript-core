@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+</head>
+<body>
+<h1>Inheritance /subclass</h1>
+
+    <script> 
+        class Car{ 
+            constructor(model,b){ 
+                this.model=model;
+                this.brand=b
+            }
+            speed(){ 
+                return "This run so first";
+            }
+        }
+      const car1 =  new Car("b13","TOYOTA");
+      document.write("This is my "+ car1.brand );
+      document.write(car1.speed());
+            class Bike extends Car{ 
+                constructor(dsk,b,model){ 
+                    super(b,model);
+                    this.disk=dsk;       
+                }
+                run(){ 
+                    return "My byk run so first."
+                }
+            }
+         const byk = new Bike("sd","halogen","w2");
+         console.log(byk);
+         console.log(byk.run());
+         console.log(byk.speed());
+         
+
+
+    </script>
+</body>
+</html>

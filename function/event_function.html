@@ -4,14 +4,36 @@
 <h1>JavaScript HTML Events</h1>
 <h2>The onclick Attribute</h2>
 
-<button onclick="info()" style="background-color: blue; color: aliceblue;">click here</button>
+<!-- <button onclick="info()" style="background-color: blue; color: aliceblue;">click here</button> -->
+<input type=button value="increment" onclick="button1()" />
+<span id="inde"></span>
+  <input type=button value="decrement" onclick="button2()" />
+  <script>
+    // var x = 0;
+    // console.log(x);
+
+    // function button1() {
+    //   console.log(x++);
+    // }
+    // function button2(){
+    //   console.log(x--) ;  
+    // } 
 
 
-<script>
-    function info() {
-        alert('Hi there!');
-    }
-</script>
+
+    var x = 0;
+
+document.getElementById('inde').innerHTML = x;
+
+function button1() {
+       document.getElementById('infe').innerHTML = x++;
+ }
+
+ function button2() {
+   document.getElementById('inde').innerHTML = x--;
+ }
+  </script>
+
 
 
 </body>

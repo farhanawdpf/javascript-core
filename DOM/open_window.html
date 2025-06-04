@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open()</title>
+</head>
+<body>
+    <button onclick="myFunction()">Click here</button>
+
+<!-- Syntax
+window.open(URL, name, specs, replace) -->
+    <script> 
+       function myFunction(){ 
+        let w=window.open("","","width=200");
+         w.document.write("hello!")
+        }
+    </script>
+</body>
+</html>

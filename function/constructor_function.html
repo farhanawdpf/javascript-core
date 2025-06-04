@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>constructor function</title>
+  </head>
+  <body>
+    <p>
+      Person is a constructor function.
+      <br> <b>this.name</b>  and  <b>this.age</b>are properties  <br>
+      assigned to the new object. <br>
+      this.greet is a method of the new object.
+    </p>
+    <h2> Constructors vs. Regular Functions:</h2>
+       <p> Constructors are intended for creating objects, <br>
+        while regular functions perform specific tasks.</p>
+    
+    <script>
+      function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        this.info = function () {
+          console.log("Hello, my name is " + this.name +" and age" +this.age);
+        };
+      }
+      let person1 = new Person("sharmin", 24);
+      let person2 = new Person("assad", 24);
+      let person3 = new Person("rafi", 24);
+      person2.info(); // Output: Hello, my name is sharmin
+    </script>
+  </body>
+</html>

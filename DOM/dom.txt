@@ -1,0 +1,57 @@
+What is the HTML DOM?
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+
+Finding HTML Elements
+Method	Description
+document.getElementById(id)	Find an element by element id
+document.getElementsByTagName(name)	Find elements by tag name
+document.getElementsByClassName(name)	Find elements by class name
+
+
+Syntax
+window.open(URL, name, specs, replace)
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.open();
+  document.write("<h1>Hello World</h1>");
+  document.close();
+}
+</script>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var myWindow = window.open("", "", "width=200,height=100");
+}
+</script>
+
+
+
+
+<h1>The Window Object</h1>
+<h2>The open() and close() Methods</h2>
+
+<button onclick="openWin()">Open "myWindow"</button>
+<button onclick="closeWin()">Close "myWindow"</button>
+
+<script>
+let myWindow;
+
+function openWin() {
+  myWindow = window.open("", "", "width=200,height=100");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+</script>

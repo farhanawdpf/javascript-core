@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Immediately invoked function expression (IIFE)</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Auto invoke Function/function as namespace</h1>
-    <h1>(function(){ } () )</h1>
+    <h1>(function(){ } )() </h1>
     <h2>And for the arrow function</h2>
     <h1>( () => {} )()</h1>
-    <script> 
-        // An IIFE that returns the sum of two numbers
-        (function(a, b) {
-        console.log (a + b);
-        })(3, 4); // returns 7
+    <script>
+      // An IIFE that returns the sum of two numbers
+//arrow function
+      ((x, y, z) => {
+        console.log(x + y + z);
+      })(5, 6, 1);
+//regular function
+      (function(x, y, z){
+        console.log(x + y + z);
+      })(5, 6, 1);
 
+      //         (function(a, b) {
+      //         console.log (a + b);
+      //         })(3, 4); // returns 7
 
-        (function(nam,age){ 
-            document.write(nam+" "+age)
-        })("Rafi",40);
+      //         (function(x,y){
+      //   document.write(x-y)
+      //         })(25,10);
 
-
+      //         (function(nam,age){
+      //             document.write(nam+" "+age)
+      //         })("Rafi",40);
     </script>
-</body>
+  </body>
 </html>
