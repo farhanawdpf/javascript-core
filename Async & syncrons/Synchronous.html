@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronous</title>
+</head>
+<body>
+
+    <h1>Synchronous function</h1>
+    <h2>Synchronous: Best for quick, simple tasks (e.g., basic calculations, UI updates).</h2>
+  
+
+    <script> 
+
+    console.log("hi");
+function longTask() {
+
+  for (let i = 0; i < 10000000000; i++) {}
+
+  console.log("Step 1: first task is Finished");
+
+}
+
+
+longTask();
+console.log("Step 2: second");
+
+
+console.log("Step 3: End");
+
+
+    </script>
+</body>
+</html>

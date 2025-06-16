@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+</head>
+<body>
+
+    <h1>Asynchronous function</h1>
+  
+<h2>Asynchronous: Ideal for long-running tasks (e.g., network requests, file handling,Api request).</h2>
+    <script> 
+
+   // asynchronous JavaScript
+/*
+* catch
+ * setTimeout
+ * setInterval
+ * axios
+ * promises
+ * XMLHttpRecquest
+ * fetch
+ */
+// setTimeout(function/callback, timeinms);
+// function: The function to be executed after the delay.
+// milliseconds: The delay in milliseconds before the function is executed.
+console.log("Step 1: Start");
+// arrow function
+// setTimeout(()=>{ 
+
+// }, timeinms)
+
+setTimeout(() => {
+
+console.log(" step 2: this is my long task.");
+
+}, 0);// 1000 millisecond =1 second
+// general function
+// setTimeout(function(){ 
+// console.log(" step 2: this is my long task.");
+
+// },1000)
+
+console.log("Step 3: End");
+
+
+// console.log('first task');
+// console.log('second task');
+// setTimeout(function () {
+//   console.log('third task');
+// }, 5000);
+// console.log('fourth');
+// console.log('five');
+    </script>
+</body>
+</html>
